@@ -21,7 +21,7 @@ configure() {
     read -r answer
   done
 
-  printf "APP:\n\tUSERNAME: %s\n\tPASSWORD: %s" "$username" "$password" >> config.yaml
+  printf "APP:\n\tUSER: %s\n\tPASSWORD: %s" "$username" "$password" >> config.yaml
 }
 
 python -m pip install --user --upgrade pip
